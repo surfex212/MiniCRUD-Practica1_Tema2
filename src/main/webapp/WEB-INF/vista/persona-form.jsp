@@ -16,12 +16,15 @@
 
         <label>Código</label>
         <input type="number" name="codigo" required />
+        
+        <label>Email</label>
+        <input type="text" name="email" required />
 
         <label>Nombre</label>
         <input type="text" name="nombre" required />
-        
+
         <label>Sueldo</label>
-        <input type="number" name="sueldo" required />
+        <input type="number" name="sueldo" step="0.01" required />
 
         <button class="btn" type="submit">Guardar</button>
         <a class="btn btn-secondary" href="${pageContext.request.contextPath}/persona">Volver</a>
