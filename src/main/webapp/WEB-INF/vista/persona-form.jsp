@@ -16,6 +16,9 @@
 
         <label>Código</label>
         <input type="number" name="codigo" required />
+        
+        <label>Email</label>
+        <input type="text" name="email" required />
 
         <label>Nombre</label>
         <input type="text" name="nombre" required />
