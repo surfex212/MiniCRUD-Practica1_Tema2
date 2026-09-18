@@ -62,8 +62,9 @@ public class PersonaControladorServlet extends HttpServlet {
     private void agregar(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
         int codigo = Integer.parseInt(request.getParameter("codigo"));
+        double sueldo = Double.parseDouble(request.getParameter("sueldo"));
         String nombre = request.getParameter("nombre");
-        dao.agregar(new PersonaVO(codigo, nombre));
+        dao.agregar(new PersonaVO(codigo, nombre, sueldo));
         response.sendRedirect(request.getContextPath() + "/persona"); // PRG → listar
     }
 
